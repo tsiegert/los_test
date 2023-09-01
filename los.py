@@ -20,7 +20,7 @@ import astropy.constants as c
 
 import pandas as pd
 
-from functools import partial
+#from functools import partial
 
 #from tqdm.autonotebook import tqdm
 
@@ -314,9 +314,9 @@ class los(object):
         #hp.graticule(color='white',alpha=0.2)
 
         
-        
+    """
     def _trafo_image(self,frames):
-        """
+       
 
         TS: NOT WORKING PROERPYL AT THE MOMENT
         
@@ -326,7 +326,7 @@ class los(object):
         'E': ecliptic
         'G': galactic
         'C': celestial
-        """
+       
 
         if not hasattr(self,'_projector'):
 
@@ -346,7 +346,7 @@ class los(object):
                                              self._fine_phi,
                                              self._fine_image_converted,
                                              scl=0.25)
-
+    """
         
     def trafo_image_EC2GAL(self,healpix_trafo=True):
         """
